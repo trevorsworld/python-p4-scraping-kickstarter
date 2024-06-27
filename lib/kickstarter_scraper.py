@@ -14,7 +14,7 @@ def create_project_dict():
         html = file.read()
         
     kickstarter = BeautifulSoup(html, 'html.parser')
-    
+    # ipdb.set_trace()
     projects = {}
     # Iterate through the projects
     for project in kickstarter.select("li.project.grid_4"):
